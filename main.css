@@ -1,0 +1,132 @@
+:root{
+    --Lime: hsl(61, 70%, 52%);
+    --Red: hsl(4, 69%, 50%);
+    --White: hsl(0, 0%, 100%);
+    --Slate-100: hsl(202, 86%, 94%);
+    --Slate-300: hsl(203, 41%, 72%);
+    --Slate-500: hsl(200, 26%, 54%);
+    --Slate-700: hsl(200, 24%, 40%);
+    --Slate-900: hsl(202, 55%, 16%);
+}
+.Slate-100{
+    background: hsl(202, 86%, 94%);
+}
+.main-flex{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    margin-top: 5rem;
+}
+.first-section{
+    background: var(--White);
+    padding:4rem 2rem;
+    border-top-left-radius: 16px;
+    border-bottom-left-radius: 16px;
+    flex: 1;
+}
+.first-section .header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.first-section .header{
+    margin-bottom: 3rem;
+}
+.first-section .header .clear-data{
+    font-size: 17px;
+    cursor: pointer;
+    text-decoration: underline;
+}
+.first-section .inputs .input-group-text{
+    background: var(--Lime);
+    border: none;
+}
+.first-section .inputs .input-group-text.nodata{
+    background: var(--Red);
+    border: 1px solid var(--Red);
+}
+.first-section button{
+    border: none;
+    padding: .7rem 6rem;
+    border-radius: 30px;
+    background: var(--Lime);
+    color: var(--Slate-900);
+    font-size: 16px;
+    font-weight: 600;
+}
+.first-section button .fa-calculator{
+    margin-right: 10px;
+}
+.second-section{
+    background: var(--Slate-900);
+    color: white;
+    padding: 4rem 2rem;
+    flex: 1;
+    border-top-right-radius: 16px;
+    border-bottom-right-radius: 16px;
+}
+.second-section .if-state{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.second-section .if-state.disable{
+    display: none;
+}
+.second-section .if-state h2{
+    margin: 1rem 0;
+}
+.second-section .if-state p{
+    text-align: center;
+}
+.second-section .if-calc{
+    display: none;
+}
+.second-section .if-calc.active{
+    display: block;
+}
+.second-section .if-calc .repayment{
+    background: hsl(202, 80%, 10%);
+    border-top: 2px solid var(--Lime);
+    border-radius: 10px;
+    padding: 3rem 30px ;
+    width: 50%;
+    margin: auto;
+}   
+.second-section .if-calc .repayment .repay{
+    font-size: 50px;
+    font-weight: 600;
+    color: var(--Lime);
+}
+.if-calc {
+    display: none;
+}
+
+.if-state {
+    display: block;
+}
+
+.calc-btn {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.calc-btn i {
+    margin-right: 8px;
+}
+
+.clear-data {
+    cursor: pointer;
+}
+
+.input-group input {
+    text-align: right;
+}
+.alert{
+    display: none;
+}
